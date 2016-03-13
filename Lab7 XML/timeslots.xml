@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeslots>
+    
+    <timeslot time="8:30">
+        <booking day="M" course="COMP4560" room="SE12-320" instructor="Brenda Fine" type="Lab" />
+        <booking day="F" course="BLAW3600" room="SW5-1850" instructor="Catherine Ryan" type="Lecture" />
+    </timeslot>	
+
+    <timeslot time="9:30">
+        <booking day="W" course="COMP4945" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        <booking day="R" course="BLAW3600" room="SW3-3620" instructor="Catherine Ryan" type="Lecture" />
+    </timeslot>	
+
+    <timeslot time="10:30">
+        <booking day="W" course="COMP4941" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+    </timeslot>	
+
+    <timeslot time="11:30">
+        <booking day="M" course="COMP4735" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+        <booking day="T" course="COMP4560" room="SW5-1850" instructor="Brenda Fine" type="Lecture" />
+        <booking day="R" course="COMP4735" room="SW3-1710" instructor="Mirela Gutica" type="Lecture" />
+        </timeslot>	
+
+    <timeslot time="12:30">
+        <booking day="T" course="COMP4711" room="SE12-320" instructor="Jim Parry" type="Lab" />
+        <booking day="F" course="COMP4560" room="SW1-1021" instructor="Brenda Fine" type="Lecture" />
+    </timeslot>	
+
+    <timeslot time="13:30">
+        <booking day="W" course="COMP4735" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+        <booking day="R" course="COMP4945" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        <booking day="F" course="COMP4941" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+    </timeslot>	
+
+    <timeslot time="14:30">
+        <booking day="T" course="COMP4711" room="SW5-1840" instructor="Jim Parry" type="Lecture" />
+    </timeslot>	
+
+    <timeslot time="15:30">
+        <booking day="M" course="COMP4735" room="SE12-322" instructor="Matt Linder" type="Lab" />
+    </timeslot>
+
+</timeslots>
