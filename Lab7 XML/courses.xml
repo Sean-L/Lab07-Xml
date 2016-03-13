@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <courses>
     <course code="BLAW3600">
-        <booking time="9:30" day="R"  room="SW3-2745" instructor="Catherine Ryan" type="Lab" />
-        <booking time="8:30" day="F"  room="SW5-1850" instructor="Catherine Ryan" type="Lecture" />
+        <booking time="9:30" day="R" coursename="Computers and the Law" room="SW3-2745" instructor="Catherine Ryan" type="Lab" />
+        <booking time="8:30" day="F" coursename="Computers and the Law" room="SW5-1850" instructor="Catherine Ryan" type="Lecture" />
     </course>
     
     <course code="COMP4560">
-        <booking time="8:30" day="M"  room="SE12-320" instructor="Brenda Fine" type="Lab" />
-        <booking time="12:30" day="F" room="SW1-1021" instructor="Brenda Fine" type="Lecture" />
+        <booking time="8:30" day="M" coursename="Computer graphics for CST" room="SE12-320" instructor="Brenda Fine" type="Lab" />
+        <booking time="12:30" day="F" coursename="Computer graphics for CST" room="SW1-1021" instructor="Brenda Fine" type="Lecture" />
     </course>
     
     <course code="COMP4711">
-        <booking time="12:30" day="T" room="SE12-320" instructor="Jim Parry" type="Lab" />
-        <booking time="14:30" day="T" room="SW5-1840" instructor="Jim Parry" type="Lecture" />
+        <booking time="12:30" day="T" coursename="Intro to internet software dev" room="SE12-320" instructor="Jim Parry" type="Lab" />
+        <booking time="14:30" day="T" coursename="Intro to internet software dev" room="SW5-1840" instructor="Jim Parry" type="Lecture" />
     </course>
 
     <course code="COMP4735">
-        <booking time="11:30" day="M" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
-        <booking time="15:30" day="M" room="SE12-322" instructor="Matt Linder" type="Lab" />
-        <booking time="13:30" day="W" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
-        <booking time="11:30"  day="R" room="SW3-1710" instructor="Mirela Gutica" type="Lecture" />
+        <booking time="11:30" day="M" coursename=" " room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+        <booking time="15:30" day="M" coursename=" " room="SE12-322" instructor="Matt Linder" type="Lab" />
+        <booking time="13:30" day="W" coursename=" " room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+        <booking time="11:30"  day="R" coursename=" " room="SW3-1710" instructor="Mirela Gutica" type="Lecture" />
     </course>
 
     <course code="COMP4941">
@@ -28,7 +28,7 @@
     </course>
 
     <course code="COMP4945">
-        <booking time="9:30" day="W" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
-        <booking time="13:30" day="R" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        <booking time="9:30" day="W" coursename="Spec topics in Client/Server" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        <booking time="13:30" day="R" coursename="Spec topics in Client/Server" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
     </course>
 </courses>
