@@ -16,7 +16,7 @@
     </timeslot>	
 
     <timeslot time="11:30">
-        <booking day="M" course="COMP4735" coursename="Operating Systems" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+        <booking day="M" course="COMP4735" coursename="Operating Systems" room="SW5-1840" instructor="Mirela Gutica" type="Lecture" />
         <booking day="T" course="COMP4560" coursename="Computer graphics for CST" room="SW5-1850" instructor="Brenda Fine" type="Lecture" />
         <booking day="R" course="COMP4735" coursename="Operating Systems" room="SW3-1710" instructor="Mirela Gutica" type="Lecture" />
         </timeslot>	
