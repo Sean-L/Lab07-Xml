@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE class SYSTEM "lab7.dtd">
+
+<timetable>
+    &timeslots;
+    &courses;
+    &days;
+</timetable>
