@@ -16,10 +16,10 @@
     </course>
 
     <course code="COMP4735">
-        <booking time="11:30" day="M" coursename=" " room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
-        <booking time="15:30" day="M" coursename=" " room="SE12-322" instructor="Matt Linder" type="Lab" />
-        <booking time="13:30" day="W" coursename=" " room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
-        <booking time="11:30"  day="R" coursename=" " room="SW3-1710" instructor="Mirela Gutica" type="Lecture" />
+        <booking time="11:30" day="M" coursename="Operating Systems" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+        <booking time="15:30" day="M" coursename="Operating Systems" room="SE12-322" instructor="Matt Linder" type="Lab" />
+        <booking time="13:30" day="W" coursename="Operating Systems" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+        <booking time="11:30"  day="R" coursename="Operating Systems" room="SW3-1710" instructor="Mirela Gutica" type="Lecture" />
     </course>
 
     <course code="COMP4941">
