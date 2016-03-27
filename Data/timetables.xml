@@ -2,9 +2,9 @@
 <!DOCTYPE class SYSTEM "lab7.dtd">
 
 <class>
-<timetable>
+    <timetable>
     &timeslots;
     &courses;
     &days;
-</timetable>
+    </timetable>
 </class>
