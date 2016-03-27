@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<timeslots>
-    
+<timeslots> 
     <timeslot time="8:30">
         <booking day="M" course="COMP4560" coursename="Computer graphics for CST" room="SE12-320" instructor="Brenda Fine" type="Lab" />
         <booking day="F" course="BLAW3600" coursename="Computers and the Law" room="SW5-1850" instructor="Catherine Ryan" type="Lecture" />
