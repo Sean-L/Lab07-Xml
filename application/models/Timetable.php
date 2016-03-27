@@ -50,6 +50,27 @@ class Timetable extends CI_Model {
         }
     }
     
+
+    //Gets bookings based on Courseno
+    public function getCourses()
+    {
+        return $this->courses;
+    }
+    
+    //Gets bookings based on Day of week
+    public function getDays()
+    {
+        return $this->days;
+    }
+    
+    //Gets bookings based on Time Slot
+    public function getTimeslots()
+    {
+        return $this->timeslots;
+    }
+    
+    
+
     
 }
 class Booking extends CI_Model
