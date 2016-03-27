@@ -25,22 +25,22 @@ class Welcome extends CI_Controller {
     }
 	public function index()
 	{
-		
-        $this->load->helper('directory');
-        $candidates = directory_map(DATAPATH);
-        sort($candidates);
-        foreach ($candidates as $file) {
-            if (substr_compare($file, XMLSUFFIX, strlen($file) - strlen(XMLSUFFIX), strlen(XMLSUFFIX)) === 0)
-            // exclude our menu
-                if ($file != 'menu.xml')
-                // trim the suffix
-                    $orders[] = array('filename' => substr($file, 0, -4));
-        }
-        $this->data['orders'] = $orders;
+		        
+        $this->data['courses'] = $this->timetable->getCourses();
+        $this->data['days'] = $this->timetable->getDays();
+        $this->data['timeslots'] = $this->timetable->getTimeslots();    
+       
+       var_dump($this->data['courses']);
+       var_dump($this->data['days']);
+       var_dump($this->data['timeslots']);
+        
         // Present the list to choose from
         $this->data['pagebody'] = 'homepage';
        // $this->render();
 
-$this->load->view('welcome_message');
+        $this->load->view('welcome_message');
 	}
+        
+        
+
 }
