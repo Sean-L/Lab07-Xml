@@ -18,8 +18,29 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+    
+      function __construct() {
+        parent::__construct();
+        $this->load->model('timetable');
+    }
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		
+        $this->load->helper('directory');
+        $candidates = directory_map(DATAPATH);
+        sort($candidates);
+        foreach ($candidates as $file) {
+            if (substr_compare($file, XMLSUFFIX, strlen($file) - strlen(XMLSUFFIX), strlen(XMLSUFFIX)) === 0)
+            // exclude our menu
+                if ($file != 'menu.xml')
+                // trim the suffix
+                    $orders[] = array('filename' => substr($file, 0, -4));
+        }
+        $this->data['orders'] = $orders;
+        // Present the list to choose from
+        $this->data['pagebody'] = 'homepage';
+       // $this->render();
+
+$this->load->view('welcome_message');
 	}
 }
