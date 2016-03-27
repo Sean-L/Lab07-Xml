@@ -10,8 +10,7 @@ class Timetable extends CI_Model {
     public function __construct() {
         parent::__construct();
         $this->xml = simplexml_load_file(DATAPATH . 'timetables.xml',"SimpleXMLElement", LIBXML_NOENT);
-        
-        
+
         //Add data to courses array
         foreach($this->xml->timeslots->courses as $course)
         {
