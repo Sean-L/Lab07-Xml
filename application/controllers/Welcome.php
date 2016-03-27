@@ -39,8 +39,8 @@ class Welcome extends CI_Controller {
         $this->data['orders'] = $orders;
         // Present the list to choose from
         $this->data['pagebody'] = 'homepage';
-        $this->render();
+       // $this->render();
 
-//$this->load->view('welcome_message');
+$this->load->view('welcome_message');
 	}
 }
