@@ -20,7 +20,7 @@ class Timetable extends CI_Model {
                 $data = new Booking($booking);
                 array_push($classes, $data);
             } 
-            $this->courses[$data->start] = $classes;
+            $this->courses[$data->time] = $classes;
         }
         
         //Add data to days array
@@ -32,7 +32,7 @@ class Timetable extends CI_Model {
                     $data = new Booking($booking);
                     array_push($classes, $data);
                 }
-                $this->days[$data->start] = $classes;
+                $this->days[$data->time] = $classes;
             }
         
         
@@ -46,7 +46,7 @@ class Timetable extends CI_Model {
                 array_push($classes, $data);
                 
             } 
-            $this->timeslots[$data->start] = $classes;
+            $this->timeslots[$data->time] = $classes;
         }
     }
     
