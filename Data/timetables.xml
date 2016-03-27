@@ -1,10 +1,108 @@
 <?xml version="1.0"?>
-<!DOCTYPE class SYSTEM "lab7.dtd">
+<!DOCTYPE timetable SYSTEM "lab7.dtd">
 
-<class>
-    <timetable>
-    &timeslots;
-    &courses;
-    &days;
-    </timetable>
-</class>
+<timetable>
+    <courses>
+        <course courseno="BLAW3600">
+            <booking time="9:30" day="R" coursename="Computers and the Law" room="SW3-2745" instructor="Catherine Ryan" type="Lab" />
+            <booking time="8:30" day="F" coursename="Computers and the Law" room="SW5-1850" instructor="Catherine Ryan" type="Lecture" />
+        </course>
+    
+        <course courseno="COMP4560">
+            <booking time="8:30" day="M" coursename="Computer graphics for CST" room="SE12-320" instructor="Brenda Fine" type="Lab" />
+            <booking time="12:30" day="F" coursename="Computer graphics for CST" room="SW1-1021" instructor="Brenda Fine" type="Lecture" />
+        </course>
+    
+        <course courseno="COMP4711">
+            <booking time="12:30" day="T" coursename="Intro to internet software dev" room="SE12-320" instructor="Jim Parry" type="Lab" />
+            <booking time="14:30" day="T" coursename="Intro to internet software dev" room="SW5-1840" instructor="Jim Parry" type="Lecture" />
+        </course>
+
+        <course courseno="COMP4735">
+            <booking time="11:30" day="M" coursename="Operating Systems" room="SW5-1840" instructor="Mirela Gutica" type="Lecture" />
+            <booking time="15:30" day="M" coursename="Operating Systems" room="SE12-322" instructor="Matt Linder" type="Lab" />
+            <booking time="13:30" day="W" coursename="Operating Systems" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+            <booking time="11:30"  day="R" coursename="Operating Systems" room="SW3-1710" instructor="Mirela Gutica" type="Lecture" />
+        </course>
+
+        <course courseno="COMP4941">
+            <booking time="10:30" day="W" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+            <booking time="13:30" day="F" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        </course>
+
+        <course courseno="COMP4945">
+            <booking time="9:30" day="W" coursename="Spec topics in Client/Server" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+            <booking time="13:30" day="R" coursename="Spec topics in Client/Server" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        </course>
+    </courses>
+    
+    <timeslots> 
+        <timeslot time="8:30">
+            <booking day="M" courseno="COMP4560" coursename="Computer graphics for CST" room="SE12-320" instructor="Brenda Fine" type="Lab" />
+            <booking day="F" courseno="BLAW3600" coursename="Computers and the Law" room="SW5-1850" instructor="Catherine Ryan" type="Lecture" />
+        </timeslot>	
+
+        <timeslot time="9:30">
+            <booking day="W" courseno="COMP4945" coursename="Spec topics in Client/Server" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+            <booking day="R" courseno="BLAW3600" coursename="Computers and the Law" room="SW3-3620" instructor="Catherine Ryan" type="Lecture" />
+        </timeslot>	
+
+        <timeslot time="10:30">
+            <booking day="W" courseno="COMP4941" coursename="Client/Server Computing 2" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        </timeslot>	
+
+        <timeslot time="11:30">
+            <booking day="M" courseno="COMP4735" coursename="Operating Systems" room="SW5-1840" instructor="Mirela Gutica" type="Lecture" />
+            <booking day="T" courseno="COMP4560" coursename="Computer graphics for CST" room="SW5-1850" instructor="Brenda Fine" type="Lecture" />
+            <booking day="R" courseno="COMP4735" coursename="Operating Systems" room="SW3-1710" instructor="Mirela Gutica" type="Lecture" />
+        </timeslot>	
+
+        <timeslot time="12:30">
+            <booking day="T" courseno="COMP4711" coursename="Intro to internet software dev" room="SE12-320" instructor="Jim Parry" type="Lab" />
+            <booking day="F" courseno="COMP4560" coursename="Computer graphics for CST" room="SW1-1021" instructor="Brenda Fine" type="Lecture" />
+        </timeslot>	
+
+        <timeslot time="13:30">
+            <booking day="W" courseno="COMP4735" coursename="Operating Systems" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+            <booking day="R" courseno="COMP4945" coursename="Spec topics in Client/Server" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+            <booking day="F" courseno="COMP4941" coursename="Client/Server Computing 2" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        </timeslot>	
+
+        <timeslot time="14:30">
+            <booking day="T" courseno="COMP4711" coursename="Intro to internet software dev" room="SW5-1840" instructor="Jim Parry" type="Lecture" />
+        </timeslot>	
+
+        <timeslot time="15:30">
+            <booking day="M" courseno="COMP4735" coursename="Operating Systems" room="SE12-322" instructor="Matt Linder" type="Lab" />
+        </timeslot>
+
+    </timeslots>
+    
+    <days>
+        <dow day="M">
+            <booking time="8:30" courseno="COMP4560" coursename="Computer graphics for CST" room="SE12-320" instructor="Brenda Fine" type="Lab" />
+            <booking time="11:30" courseno="COMP4735" coursename="Operating Systems" room="SW5-1840" instructor="Mirela Gutica" type="Lecture" />
+            <booking time="15:30" courseno="COMP4735" coursename="Operating Systems" room="SE12-322" instructor="Matt Linder" type="Lab" />
+        </dow>
+        <dow day="T">
+            <booking time="11:30" courseno="COMP4560" coursename="Computer graphics for CST" room="SW-1850" instructor="Brenda Fine" type="Lecture" />
+            <booking time="12:30" courseno="COMP4711" coursename="Intro to internet software dev" room="SE12-320" instructor="Jim Parry" type="Lab" />
+            <booking time="14:30" courseno="COMP4711" coursename="Intro to internet software dev" room="SW5-1840" instructor="Jim Parry" type="Lecture" />
+        </dow>
+        <dow day="W">
+            <booking time="9:30" courseno="COMP4945" coursename="Spec topics in Client/Server" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+            <booking time="10:30" courseno="COMP4941" coursename="Client/Server Computing 2" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+            <booking time="13:30" courseno="COMP4735" coursename="Operating Systems" room="SW1-1205" instructor="Mirela Gutica" type="Lecture" />
+        </dow>
+        <dow day="R">
+            <booking time="9:30" courseno="BLAW3600" coursename="Computers and the Law" room="SW3-3620"  instructor="Catherine Ryan" type="Lecture" />
+            <booking time="11:30" courseno="COMP4735" coursename="Operating Systems" room="SW3-1710" instructor="Mirela Gutica" type="Lecture" />
+            <booking time="13:30" courseno="COMP4945" coursename="Spec topics in Client/Server" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        </dow>
+        <dow day="F">
+            <booking time="8:30" courseno="BLAW3600" coursename="Computers and the Law" room="SW5-1850" instructor="Catherine Ryan" type="Lecture" />
+            <booking time="12:30" courseno="COMP4560" coursename="Computer graphics for CST" room="SW1-1021" instructor="Brenda Fine" type="Lecture" />
+            <booking time="13:30" courseno="COMP4941" coursename="Client/Server Computing 2" room="SE12-319" instructor="Tejinder Randahwa" type="Split" />
+        </dow>
+    </days>
+</timetable>

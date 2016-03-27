@@ -1,16 +1,18 @@
-<!ELEMENT timetables (timeslots,days,courses)>
+<!ELEMENT timetable (courses,timeslots,days)>
+    <!ELEMENT courses (course*)>
+        <!ELEMENT course (booking*)>
+            <!ATTLIST course courseno CDATA #REQUIRED>
+            <!ELEMENT booking EMPTY>
+
     <!ELEMENT timeslots (timeslot*)>
         <!ELEMENT timeslot (booking*)>
             <!ATTLIST timeslot time CDATA #REQUIRED>
 
-    <!ELEMENT days (day*)>
-        <!ELEMENT day (booking*)>
-            <!ATTLIST day weekday (M|T|W|R|F) #REQUIRED>
+    <!ELEMENT days (dow*)>
+        <!ELEMENT dow (booking*)>
+            <!ATTLIST  dow day (M|T|W|R|F) #REQUIRED>
 
-    <!ELEMENT courses (course*)>
-        <!ELEMENT course (booking*)>
-            <!ATTLIST course code CDATA #REQUIRED>
-            <!ELEMENT booking EMPTY>
+    
     
     <!ATTLIST booking
         day (M|T|W|R|F) #IMPLIED
@@ -21,6 +23,3 @@
         instructor CDATA #REQUIRED
         type CDATA #REQUIRED
     >
-<!ENTITY days SYSTEM "days.xml">
-<!ENTITY courses SYSTEM "courses.xml">
-<!ENTITY timeslots SYSTEM "timeslots.xml">
