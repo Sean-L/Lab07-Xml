@@ -9,7 +9,7 @@ class Timetable extends CI_Model {
     
     public function __construct() {
         parent::__construct();
-        $this->xml = simplexml_load_file(DATAPATH . 'timetables.xml');
+        $this->xml = simplexml_load_file(DATAPATH . 'timetables.xml',"SimpleXMLElement", LIBXML_NOENT);
         
         
         //Add data to courses array
@@ -49,5 +49,29 @@ class Timetable extends CI_Model {
             } 
             $this->timeslots[$data->start] = $classes;
         }
+    }
+    
+    
+}
+class Booking extends CI_Model
+{
+    public $day = null;
+    public $courseno = null;
+    public $coursename = null;
+    public $instructor = null;
+    public $room = null;
+    public $time = null;
+    public $type = null;
+    
+    function __construct($class)
+    {
+        $this->day = (string) $class['day'];
+        $this->courseno = (string) $class['courseno'];
+        $this->couresname = (string) $class['coursename'];
+        $this->instructor = (string) $class['instructor'];
+        $this->room = (string) $class['room'];
+        $this->time = (string) $class['time'];
+        $this->type = (string) $class['type'];
+        
     }
 }
